@@ -25,12 +25,15 @@
 
   <h2>Data stored on your device only</h2>
   <ul>
-    <li><strong>OpenRouter Management Key:</strong> encrypted with AndroidKeyStore.
-      It never leaves the device except to call the OpenRouter API
-      (<code>api.openrouter.ai</code>) to fetch your credit balance at your
-      request. No backup. Never transmitted to us or anyone else.</li>
-    <li><strong>Settings and history:</strong> refresh interval, last 30 balance
-      checks, monitoring flag, remove-ads purchase flag. Local only.</li>
+    <li><strong>OpenRouter Management Keys:</strong> encrypted with AndroidKeyStore.
+      They never leave the device except to call the OpenRouter API
+      (<code>api.openrouter.ai</code>) to fetch your credit balances at your
+      request. No backup. Never transmitted to us or anyone else. Each key has
+      an alias you choose; history entries keep an alias snapshot so past
+      checks stay readable after a rename or deletion.</li>
+    <li><strong>Settings and history:</strong> refresh interval, balance-check
+      history (last 30 per key, 90 total), history filter, monitoring flag,
+      remove-ads purchase flag. Local only.</li>
   </ul>
 
   <h2>Data shared with third parties</h2>
@@ -56,7 +59,7 @@
   </ul>
 
   <h2>Deletion</h2>
-  <p>Use in-app Settings to clear your key. Uninstalling the app wipes all local
+  <p>Use in-app Settings to remove your keys. Uninstalling the app wipes all local
   data. No accounts exist on our side, so there is nothing to delete server-side —
   we hold no user data at all.</p>
 
